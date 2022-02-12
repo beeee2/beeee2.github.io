@@ -1,0 +1,82 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+@font-face {
+  font-family: 'GmarketSansLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GmarketSansBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*공통속성*/
+a {text-decoration: none;color: #212529;transition: all .2s;}
+a:hover {text-decoration: none;}
+li {list-style: none;}
+
+/*헤더*/
+.hd {height: 100px;background-color: #1F203A;}
+.logo_icon {color: #fff;font-size: 50px;}
+.toggle_icon {color: #fff;font-size: 28px;}
+
+/*본문*/
+.sec1 {position: relative;}
+.sec1 .bg_box {height: 400px;background-color: #F2F2F2;}
+.sec1 .cont_box {position: absolute;top:70px;}
+.sec1 .img_box {height: 400px;width:400px;overflow: hidden;background-color: #C8C8CA; border: 8px solid #fff;border-radius: 50%;}
+.sec1 .txt_box p.light {font-family: 'GmarketSansLight';font-size: 35px;letter-spacing: 4px;}
+.sec1 .txt_box b.bold {font-family: 'GmarketSansBold';}
+.sec1 .txt_box .txt{line-height:1.65}
+.sec1 .txt_box .link {font-family: 'GmarketSansMedium';letter-spacing: 2.25px;}
+
+.sec2 {margin-top:600px;position: relative;}
+.sec2 .cont_box p.bold {font-family: 'GmarketSansMedium';letter-spacing: 2.25px;font-size:54px;}
+.sec2 .cont_box p.display_mb {display: none;}
+.sec2 .cont_box .link {font-family: 'GmarketSansMedium';letter-spacing: 1.5px;width: 170px;height: 45px;font-size: 14px;}
+.sec2 .bg_box {height:360px;background-color: #E5E5E5;margin-top: -270px;}
+
+.sec3 .medium {text-align: right;font-family: 'GmarketSansMedium'; font-size: 68px;}
+.sec3 .cont1 {padding-top: 95px;}
+.sec3 .more_btn {width: 170px;height: 45px; background-color: #ff942c;font-family: 'GmarketSansLight';letter-spacing: 1.35px;}
+.sec3 .skill_list {}
+.sec3 .skill_list li {font-family: 'GmarketSansLight'; font-size: 26px;}
+.sec3 .portfolio .bold {font-family: 'GmarketSansMedium';letter-spacing: 2.25px; font-size: 30px;}
+
+.ft {background-color: #333333;}
+.ft .light {font-family: 'GmarketSansLight'; font-size: 14px;letter-spacing: 1.2px;}
+.ft .sns_box i {color: #fff; font-size: 26px;}
+.ft .velog i {font-size: 20px;}
+
+/*반응형 작업*/
+@media screen and (min-width:1200px) {
+  .hd_wrap {max-width: 1200px;margin:0 auto;}
+}
+@media (max-width:1200px) {
+  .sec2 .cont_box p.bold {font-size:43px;}
+  .sec3 .medium{font-size: 48px;}
+}
+@media (max-width:992px) {
+  .sec3 .medium{text-align: left;padding-left: 5rem;}
+  .sec3 .more_btn {margin-left: 2rem;}
+}
+@media (max-width:768px) {
+  .sec2 .cont_box p.bold {font-size: 35px;text-align: center;}
+  .sec2 .cont_box p.display_mb {display: block;}
+  .sec2 .cont_box p.display_pc {display: none;}
+  .sec2 .cont_box {justify-content: center;}
+  .sec2 .cont_box .link {margin: 0 auto;}
+  .sec3 .medium{text-align: left;padding-left: 5rem;font-size: 42px;}
+  .sec3 .skill_list li {font-size: 22px;}
+}
