@@ -60,6 +60,11 @@ li {list-style: none;}
 .ft .sns_box i {color: #fff; font-size: 26px;}
 .ft .velog i {font-size: 20px;}
 
+.grid-item img {display: block; min-width:100%; max-width: 100%;}
+
+
+출처: https://sub0709.tistory.com/127 [쓸데없는 코딩하기]
+
 /*반응형 작업*/
 @media screen and (min-width:1200px) {
   .hd_wrap {max-width: 1200px;margin:0 auto;}
