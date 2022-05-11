@@ -36,12 +36,13 @@ li {list-style: none;}
 .sec1 .bg_box {height: 400px;background-color: #F2F2F2;}
 .sec1 .cont_box {position: absolute;top:70px;}
 .sec1 .img_box {height: 400px;width:400px;overflow: hidden;background-color: #C8C8CA; border: 8px solid #fff;border-radius: 50%;}
-.sec1 .txt_box p.light {font-family: 'GmarketSansLight';font-size: 35px;letter-spacing: 4px;}
+.sec1 .txt_box p.light {font-family: 'GmarketSansLight';font-size: 37px;letter-spacing: 4px;}
 .sec1 .txt_box b.bold {font-family: 'GmarketSansBold';}
-.sec1 .txt_box .txt{line-height:1.65}
+.sec1 .txt_box .txt{line-height:1.65;font-size:18px;}
 .sec1 .txt_box .link {font-family: 'GmarketSansMedium';letter-spacing: 2.25px;}
 
 .sec2 {margin-top:600px;position: relative;}
+.sec2 .cont_box .cont img{box-shadow : 0px 2px 10px rgb(0 0 0 / 35%)}
 .sec2 .cont_box p.bold {font-family: 'GmarketSansMedium';letter-spacing: 2.25px;font-size:54px;}
 .sec2 .cont_box p.display_mb {display: none;}
 .sec2 .cont_box .link {font-family: 'GmarketSansMedium';letter-spacing: 1.5px;width: 170px;height: 45px;font-size: 14px;}
@@ -51,7 +52,7 @@ li {list-style: none;}
 .sec3 .cont1 {padding-top: 95px;}
 .sec3 .more_btn {width: 170px;height: 45px; background-color: #ff942c;font-family: 'GmarketSansLight';letter-spacing: 1.35px;}
 .sec3 .skill_list {}
-.sec3 .skill_list li {font-family: 'GmarketSansLight'; font-size: 26px;}
+.sec3 .skill_list li {font-family: 'GmarketSansLight'; font-size: 30px;padding:2.5px 0;}
 .sec3 .portfolio .bold {font-family: 'GmarketSansMedium';letter-spacing: 2.25px; font-size: 30px;}
 
 .ft {background-color: #333333;}
