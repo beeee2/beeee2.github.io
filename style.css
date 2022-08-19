@@ -62,8 +62,17 @@ li {list-style: none;}
 
 .grid-item img {display: block; min-width:100%; max-width: 100%;}
 
-
-출처: https://sub0709.tistory.com/127 [쓸데없는 코딩하기]
+.swiper-container {
+  height: 620px;
+  overflow-y: scroll;
+  position: relative;
+}
+.swiper-container .swiper-button-next,.swiper-container .swiper-button-prev {
+  top: 35%;
+}
+.swiper-container .swiper-pagination-bullets.swiper-pagination-horizontal {
+  top: 33%;
+}
 
 /*반응형 작업*/
 @media screen and (min-width:1200px) {

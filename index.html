@@ -8,6 +8,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
 </head>
 <body>
   <header class="hd px-5">
@@ -76,48 +80,53 @@
         <div class="box col-lg-6 px-5">
           <ul class="skill_list">
             <li>HTML5, CSS3, Bootstrap</li>
-            <li>Javascript, Django</li>
-            <li>SQLite, React, Vue</li>
+            <li>Javascript</li>
+            <li>React</li>
           </ul>
           <a href="#" class="more_btn d-flex justify-content-center align-items-center text-white mt-5">READ MORE</a>
         </div>
       </div>
-      <div class="portfolio mt-5 pt-5 w-100 container">
+      <div class="portfolio container swiper-container">
         <p class="bold text-center mt-5 py-5">View Portfolio</p>
-        <ul class="row px-0 mb-0 pb-0 w-100 mx-0 grid" data-masonry="{"percentPosition" : true}">
-          <li class="col-12 col-md-6 col-lg-6 px-4 grid-item"><img src="./images/2021_웹페이지_개발 (13).jpg" class="w-100" alt=""></li>
-          <li class="col-12 col-md-6 col-lg-6 px-4 grid-item"><img src="./images/2021_웹페이지_개발 (14).jpg" class="w-100" alt=""></li>
-          <li class="col-12 col-md-6 col-lg-6 px-4 grid-item"><img src="./images/2021_웹페이지_개발 (15).jpg" class="w-100" alt=""></li>
-          <li class="col-12 col-md-6 col-lg-6 px-4 grid-item"><img src="./images/2021_웹페이지_개발 (16).jpg" class="w-100" alt=""></li>
-          <li class="col-12 col-md-6 col-lg-6 px-4 grid-item"><img src="./images/2021_웹페이지_개발 (17).jpg" class="w-100" alt=""></li>
-          <li class="col-12 col-md-6 col-lg-6 px-4 grid-item"><img src="./images/2021_웹페이지_개발 (18).jpg" class="w-100" alt=""></li>
-          <li class="col-12 col-md-6 col-lg-6 px-4 grid-item"><img src="./images/2021_웹페이지_개발 (20).jpg" class="w-100" alt=""></li>
-          <li class="col-12 col-md-6 col-lg-6 px-4 grid-item"><img src="./images/2021_웹페이지_개발 (21).jpg" class="w-100" alt=""></li>
-          <li class="col-12 col-md-6 col-lg-6 px-4 grid-item"><img src="./images/2021_웹페이지_개발 (22).jpg" class="w-100" alt=""></li>
-          <li class="col-12 col-md-6 col-lg-6 px-4 grid-item"><img src="./images/2021_웹페이지_개발 (23).jpg" class="w-100" alt=""></li>
-          <li class="col-12 col-md-6 col-lg-6 px-4 grid-item"><img src="./images/2021_웹페이지_개발 (25).jpg" class="w-100" alt=""></li>
-          <li class="col-12 col-md-6 col-lg-6 px-4 grid-item"><img src="./images/2021_웹페이지_개발 (26).jpg" class="w-100" alt=""></li>
-          <li class="col-12 col-md-6 col-lg-6 px-4 grid-item"><img src="./images/2021_웹페이지_개발 (27).jpg" class="w-100" alt=""></li>
-          <li class="col-12 col-md-6 col-lg-6 px-4 grid-item"><img src="./images/2021_웹페이지_개발 (28).jpg" class="w-100" alt=""></li>
-        
-          <li class="col-12 col-md-6 col-lg-6 px-4 grid-item"><img src="./images/2021_웹페이지_개발.jpg" class="w-100" alt=""></li>
-          <li class="col-12 col-md-6 col-lg-6 px-4 grid-item"><img src="./images/2021_웹페이지_개발 (2).jpg" class="w-100" alt=""></li>
-          <li class="col-12 col-md-6 col-lg-6 px-4 grid-item"><img src="./images/2021_웹페이지_개발 (5).jpg" class="w-100" alt=""></li>
-          <li class="col-12 col-md-6 col-lg-6 px-4 grid-item"><img src="./images/2021_웹페이지_개발 (6).jpg" class="w-100" alt=""></li>
-          <li class="col-12 col-md-6 col-lg-6 px-4 grid-item"><img src="./images/2021_웹페이지_개발 (7).jpg" class="w-100" alt=""></li>
-          <li class="col-12 col-md-6 col-lg-6 px-4 grid-item"><img src="./images/2021_웹페이지_개발 (3).jpg" class="w-100" alt=""></li>
-          <li class="col-12 col-md-6 col-lg-6 px-4 grid-item"><img src="./images/2021_웹페이지_개발 (4).jpg" class="w-100" alt=""></li>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class=" mt-5 pt-5 w-100 swiper mySwiper">
+          <ul class=" px-0 mb-0 pb-0 w-100 mx-0  swiper-wrapper" >
+            <li class="swiper-slide px-4 "><img src="./images/2021_웹페이지_개발 (13).jpg" class="w-100" alt=""></li>
+            <li class="swiper-slide px-4 "><img src="./images/2021_웹페이지_개발 (14).jpg" class="w-100" alt=""></li>
+            <li class="swiper-slide px-4 "><img src="./images/2021_웹페이지_개발 (15).jpg" class="w-100" alt=""></li>
+            <li class="swiper-slide px-4 "><img src="./images/2021_웹페이지_개발 (16).jpg" class="w-100" alt=""></li>
+            <li class="swiper-slide px-4 "><img src="./images/2021_웹페이지_개발 (17).jpg" class="w-100" alt=""></li>
+            <li class="swiper-slide px-4 "><img src="./images/2021_웹페이지_개발 (18).jpg" class="w-100" alt=""></li>
+            <li class="swiper-slide px-4 "><img src="./images/2021_웹페이지_개발 (20).jpg" class="w-100" alt=""></li>
+            <li class="swiper-slide px-4 "><img src="./images/2021_웹페이지_개발 (21).jpg" class="w-100" alt=""></li>
+            <li class="swiper-slide px-4 "><img src="./images/2021_웹페이지_개발 (22).jpg" class="w-100" alt=""></li>
+            <li class="swiper-slide px-4 "><img src="./images/2021_웹페이지_개발 (23).jpg" class="w-100" alt=""></li>
+            <li class="swiper-slide px-4 "><img src="./images/2021_웹페이지_개발 (25).jpg" class="w-100" alt=""></li>
+            <li class="swiper-slide px-4 "><img src="./images/2021_웹페이지_개발 (26).jpg" class="w-100" alt=""></li>
+            <li class="swiper-slide px-4 "><img src="./images/2021_웹페이지_개발 (27).jpg" class="w-100" alt=""></li>
+            <li class="swiper-slide px-4 "><img src="./images/2021_웹페이지_개발 (28).jpg" class="w-100" alt=""></li>
           
-          <li class="col-12 col-md-6 col-lg-6 px-4 grid-item"><img src="./images/2021_웹페이지_개발 (8).jpg" class="w-100" alt=""></li>
-          <li class="col-12 col-md-6 col-lg-6 px-4 grid-item"><img src="./images/2021_웹페이지_개발 (9).jpg" class="w-100" alt=""></li>
-          <li class="col-12 col-md-6 col-lg-6 px-4 grid-item"><img src="./images/2021_웹페이지_개발 (10).jpg" class="w-100" alt=""></li>
-          <li class="col-12 col-md-6 col-lg-6 px-4 grid-item"><img src="./images/2021_웹페이지_개발 (11).jpg" class="w-100" alt=""></li>
-          <li class="col-12 col-md-6 col-lg-6 px-4 grid-item"><img src="./images/2021_웹페이지_개발 (12).jpg" class="w-100" alt=""></li>
-          <li class="col-12 col-md-6 col-lg-6 px-4 grid-item"><img src="./images/2021_웹페이지_개발 (19).jpg" class="w-100" alt=""></li>
-          <li class="col-12 col-md-6 col-lg-6 px-4 grid-item"><img src="./images/2021_웹페이지_개발 (24).jpg" class="w-100" alt=""></li>
-          
-        </ul>
+            <li class="swiper-slide px-4 "><img src="./images/2021_웹페이지_개발.jpg" class="w-100" alt=""></li>
+            <li class="swiper-slide px-4 "><img src="./images/2021_웹페이지_개발 (2).jpg" class="w-100" alt=""></li>
+            <li class="swiper-slide px-4 "><img src="./images/2021_웹페이지_개발 (5).jpg" class="w-100" alt=""></li>
+            <li class="swiper-slide px-4 "><img src="./images/2021_웹페이지_개발 (6).jpg" class="w-100" alt=""></li>
+            <li class="swiper-slide px-4 "><img src="./images/2021_웹페이지_개발 (7).jpg" class="w-100" alt=""></li>
+            <li class="swiper-slide px-4 "><img src="./images/2021_웹페이지_개발 (3).jpg" class="w-100" alt=""></li>
+            <li class="swiper-slide px-4 "><img src="./images/2021_웹페이지_개발 (4).jpg" class="w-100" alt=""></li>
+            
+            <li class="swiper-slide px-4 "><img src="./images/2021_웹페이지_개발 (8).jpg" class="w-100" alt=""></li>
+            <li class="swiper-slide px-4 "><img src="./images/2021_웹페이지_개발 (9).jpg" class="w-100" alt=""></li>
+            <li class="swiper-slide px-4 "><img src="./images/2021_웹페이지_개발 (10).jpg" class="w-100" alt=""></li>
+            <li class="swiper-slide px-4 "><img src="./images/2021_웹페이지_개발 (11).jpg" class="w-100" alt=""></li>
+            <li class="swiper-slide px-4 "><img src="./images/2021_웹페이지_개발 (12).jpg" class="w-100" alt=""></li>
+            <li class="swiper-slide px-4 "><img src="./images/2021_웹페이지_개발 (19).jpg" class="w-100" alt=""></li>
+            <li class="swiper-slide px-4 "><img src="./images/2021_웹페이지_개발 (24).jpg" class="w-100" alt=""></li>
+          </ul>
+        </div>
       </div>
+      
     </section>
   </div>
   <footer class="ft w-100 mt-5 d-flex flex-column justify-content-center align-items-center py-3">
@@ -127,15 +136,28 @@
     </ul>
     <p class="text-white light">Portfolio by Sueun</p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   
   <script>
-    $('.grid').masonry({
-    itemSelector: '.grid-item',
-    columnWidth: '.grid-sizer',
-    percentPosition: true
-  });
+
+    let swiper = new Swiper(".mySwiper", {
+            loop: true,
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+              el: '.swiper-pagination',
+              clickable:true,
+            },
+            slidesPerGroup: 3,
+            // Navigation arrows
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+            freeMode: true,
+          });
+    
   </script>
 </body>
 </html>
